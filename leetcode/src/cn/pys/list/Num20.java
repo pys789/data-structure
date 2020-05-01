@@ -3,6 +3,10 @@ package cn.pys.list;
 import java.util.HashMap;
 import java.util.Stack;
 
+/**
+ * 有效括号
+ * https://leetcode-cn.com/problems/valid-parentheses/
+ */
 public class Num20 {
 
     public static void main(String[] args) {
