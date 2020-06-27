@@ -1,9 +1,8 @@
-package cn.pys.sort.cmp;
+package cn.pys.sort;
 
+import cn.pys.SortAbstract;
 
-import cn.pys.sort.Sort;
-
-public class InsertionSort1<T extends Comparable<T>> extends Sort<T> {
+public class InsertionSort1<T extends Comparable<T>> extends SortAbstract<T> {
 
 	@Override
 	protected void sort() {

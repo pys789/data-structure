@@ -1,21 +1,21 @@
-package cn.pys.sort.cmp;
+package cn.pys.sort;
 
-import cn.pys.sort.Sort;
+import cn.pys.SortAbstract;
 
-public class BubbleSort2<T extends Comparable<T>> extends Sort<T> {
+public class BubbleSort3<T extends Comparable<T>> extends SortAbstract<T> {
 
 	@Override
 	protected void sort() {
 		for (int end = array.length - 1; end > 0; end--) {
-			boolean sorted = true;
+			int sortedIndex = 1;
 			for (int begin = 1; begin <= end; begin++) {
 				// if (array[begin] < array[begin - 1]) {
 				if (cmp(begin, begin - 1) < 0) {
 					swap(begin, begin - 1);
-					sorted = false;
+					sortedIndex = begin;
 				}
 			}
-			if (sorted) break;
+			end = sortedIndex;
 		}
 	}
 

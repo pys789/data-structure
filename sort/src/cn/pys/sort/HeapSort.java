@@ -1,9 +1,8 @@
-package cn.pys.sort.cmp;
+package cn.pys.sort;
 
+import cn.pys.SortAbstract;
 
-import cn.pys.sort.Sort;
-
-public class HeapSort<T extends Comparable<T>> extends Sort<T> {
+public class HeapSort<T extends Comparable<T>> extends SortAbstract<T> {
 	private int heapSize;
 
 	@Override
