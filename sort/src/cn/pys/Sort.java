@@ -4,7 +4,7 @@ import java.text.DecimalFormat;
 
 
 @SuppressWarnings("unchecked")
-public abstract class SortAbstract<T extends Comparable<T>> implements Comparable<SortAbstract<T>> {
+public abstract class Sort<T extends Comparable<T>> implements Comparable<Sort<T>> {
 	protected T[] array;
 	private int cmpCount;
 	private int swapCount;
@@ -22,7 +22,7 @@ public abstract class SortAbstract<T extends Comparable<T>> implements Comparabl
 	}
 	
 	@Override
-	public int compareTo(SortAbstract<T> o) {
+	public int compareTo(Sort<T> o) {
 		int result = (int)(time - o.time);
 		if (result != 0) return result;
 		
